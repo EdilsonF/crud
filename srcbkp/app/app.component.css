@@ -1,0 +1,45 @@
+.btn-pattern{
+    width: 270px;
+
+    
+}  
+.btn-pattern:hover{
+    border-color: red;
+    background-color: rgb(189, 189, 189);
+    color:white;
+}
+.card{
+    margin: 100px auto;
+    width: 400px;
+}
+.card-header, .card-body{
+    text-align: center
+}
+.card-body{
+    margin: auto;
+    
+}
+.fb-img, .gg-img{
+    width: 30px;
+    height: 30px;
+}
+.fb-img{
+    margin-right: 16px;
+}
+.gg-img{
+    margin-right: 28px;
+}
+.bt-logout a, .bt-logout a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.bt-logout{
+    color: #fff;
+    background-color:red;
+    box-shadow: 2px 2px 2px black;   
+    width: 8em;
+}
+.bt-logout:hover{
+    background-color: rgb(196, 0, 0);
+}
+

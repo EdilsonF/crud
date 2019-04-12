@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Pessoa } from './pessoa';
-import { AngularFireDatabase } from '@angular/fire/database';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { map } from 'rxjs/operators';
 
 @Injectable({
@@ -27,7 +27,7 @@ export class PessoaService {
     .snapshotChanges()
     .pipe(
       map(changes => {
-        return changes.map(c => ({ key: c.payload, ...c.payload.val() }));
+        return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
       })
     );
   }

@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Nome</label>
+    <input type="text" placeholder="Ex.: Fulano Cicrano"class="form-control" [(ngModel)]="pessoa.nome" name="nome" />
+  </div>
+  <div class="form-group">
+      <label>Idade</label>
+      <input type="number" placeholder="Ex.: 33" class="form-control" [(ngModel)]="pessoa.idade" name="modelo" />
+  </div>
+  <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="Ex.: fulano212@gmail.com" class="form-control" [(ngModel)]="pessoa.email" name="email" />
+  </div>
+  <div class="form-group">
+      <label>Cidade</label>
+      <input type="text" placeholder="Ex.: João Pessoa" class="form-control" [(ngModel)]="pessoa.cidade" name="cidade" />
+  </div>
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
